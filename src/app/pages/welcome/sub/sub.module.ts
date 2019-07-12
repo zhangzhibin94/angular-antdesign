@@ -1,9 +1,9 @@
 import {NgModule} from '@angular/core';
 
-import {WelcomeRoutingModule2} from './welcome-routing.module';
+import {SubRoutingModule} from './sub-routing.module';
 
-import {WelcomeComponent2} from './welcome.component';
-import {IconsProviderModule} from "../../icons-provider.module";
+import {SubComponent} from './sub.component';
+import {IconsProviderModule} from "../../../icons-provider.module";
 import {NgZorroAntdModule} from "ng-zorro-antd";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {HttpClientModule} from "@angular/common/http";
@@ -12,7 +12,7 @@ import {NzFormModule} from 'ng-zorro-antd/form';
 import {CommonModule} from "@angular/common";
 
 @NgModule({
-  imports: [WelcomeRoutingModule2,
+  imports: [SubRoutingModule,
     IconsProviderModule,
     NgZorroAntdModule,
     FormsModule,
@@ -22,7 +22,7 @@ import {CommonModule} from "@angular/common";
     ReactiveFormsModule,
     CommonModule,
   ],
-  declarations: [WelcomeComponent2],
-  exports: [WelcomeComponent2]
+  declarations: [SubComponent],
+  exports: [SubComponent]
 })
-export class WelcomeModule2 { }
+export class SubModule { }

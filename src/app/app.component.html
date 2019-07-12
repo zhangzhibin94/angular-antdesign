@@ -18,7 +18,7 @@
             <a routerLink="/welcome">垃圾管理</a>
           </li>
           <li nz-menu-item nzMatchRouter>
-            <a>Monitor</a>
+            <a routerLink="/welcomeSub">Monitor</a>
           </li>
           <li nz-menu-item nzMatchRouter>
             <a>Workplace</a>
@@ -28,7 +28,10 @@
       <li nz-submenu nzOpen nzTitle="测试目录啊" nzIcon="form">
         <ul>
           <li nz-menu-item nzMatchRouter>
-            <a routerLink="/welcome2">Basic Form</a>
+            <a routerLink="/welcome2">子目录1</a>
+          </li>
+          <li nz-menu-item nzMatchRouter>
+            <a routerLink="/sub">子目录2</a>
           </li>
         </ul>
       </li>
@@ -42,6 +45,12 @@
                nz-icon
                [nzType]="isCollapsed ? 'menu-unfold' : 'menu-fold'"
             ></i>
+        </span>
+        <span class="trigger" style="float: right; padding-right: 24px">
+          <a routerLink="/login">
+            <i nz-icon nzType="login" nzTheme="outline"></i>
+          </a>
+
         </span>
       </div>
     </nz-header>
